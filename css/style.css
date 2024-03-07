@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities */
+.colum{
+    flex-direction: column;
+
+}
+
+.alingcenter{
+    align-items: center;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.center-space{
+    justify-content: space-between;
+}
+
+.container{
+    min-height: 200px;
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid black;
+}
+/* fine utilities */
+
+/* navbar */
+
+.navbar{
+    background-color: aqua;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+}
+
+.list{
+   display: none;
+}
+
+@media screen and ( min-width: 1024px) {
+    
+.list{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+    
+}
+
+/* fine navbar */
+
+/* inizio itemcard */
+
+.itemcard{
+    margin: 10px;
+    border-radius: 10px;
+    height: 300px;
+    width: 30%;
+    border: 1px black solid;
+   background-color: blue;
+
+
+}
+
+
+@media screen and ( min-width: 748px) {
+    .itemcards{
+      flex-direction: row;
+      flex-wrap: wrap;
+
+
+    }
+   
+   .itemcard:nth-child(1) {
+    width: 60%;
+   
+
+    
+  
+   }
+
+
+
+}
+
+/* fine itemcard */
+
+.color{
+    background-color: rgb(148, 75, 193);
+}
+
+
+.boximg{
+    width: 100%;
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+.appdownload{
+    margin: 0 auto;
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+
+
+
+}
+
+@media screen and ( min-width: 1024px){
+    .container{
+        display: flex;
+       align-items: center;
+    }
+    .boximg{
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .appdownload{
+        width: 30%;
+    }
+}
