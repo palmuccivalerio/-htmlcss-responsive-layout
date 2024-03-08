@@ -174,16 +174,29 @@
 /* fine workingssection */
 /* inizio about section */
 .abautus-paragraf{
-    width:70% ;
+    width:50% ;
     min-height: fit-content;
     text-align: center;
     
 }
 .card-paragraf{
-    width: 70%;
+    width: 50%;
     min-height: 300px;
     background-color: antiquewhite;
     border: 1px solid black;
+}
+@media  screen and (min-width: 748px) {
+    #about-sectionid{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    #about-sectionid{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /* fine about section */
