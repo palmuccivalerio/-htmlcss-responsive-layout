@@ -118,8 +118,8 @@
 /* inizio  expertcommit */
 
 .cardcommit {
-  width: 30%;
-  min-height: 150px;
+  width: 80%;
+  min-height: 200px;
   border: 1px black solid;
   background-color: blueviolet;
   border-radius: 5px;
@@ -171,4 +171,19 @@
     width: calc(60% / 2);
   }
 }
-/* inizio workingssection */
+/* fine workingssection */
+/* inizio about section */
+.abautus-paragraf{
+    width:70% ;
+    min-height: fit-content;
+    text-align: center;
+    
+}
+.card-paragraf{
+    width: 70%;
+    min-height: 300px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+/* fine about section */
