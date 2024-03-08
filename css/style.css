@@ -1,175 +1,174 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* utilities */
-.colum{
-    flex-direction: column;
-
+.colum {
+  flex-direction: column;
 }
 
-.alingcenter{
-    align-items: center;
+.alingcenter {
+  align-items: center;
 }
 
-
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.center-space{
-    justify-content: space-between;
+.center-space {
+  justify-content: space-between;
 }
 
-.main-container{
-    min-height: 200px;
-    margin: 0 auto;
-    width: 90%;
-    border: 1px solid black;
+.main-container {
+  min-height: 200px;
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid black;
 }
 
-
-.titlecenter{
-    text-align: center;
+.titlecenter {
+  text-align: center;
 }
-
 
 /* fine utilities */
 
 /* navbar */
 
-.navbar{
-    background-color: aqua;
-    width: 100%;
-    height: 70px;
-    padding: 10px;
+.navbar {
+  background-color: aqua;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
 }
 
-.list{
-   display: none;
+.list {
+  display: none;
 }
 
-@media screen and ( min-width: 1024px) {
-    
-.list{
+@media screen and (min-width: 1024px) {
+  .list {
     display: flex;
     gap: 10px;
     list-style-type: none;
-}
-    
+  }
 }
 
 /* fine navbar */
 
 /* inizio itemcard */
 
-.itemcard{
-    margin: 10px;
-    border-radius: 10px;
-    height: 300px;
-    width: 30%;
-    border: 1px black solid;
-   background-color: blue;
-
-
+.itemcard {
+  margin: 10px;
+  border-radius: 10px;
+  height: 300px;
+  width: 30%;
+  border: 1px black solid;
+  background-color: blue;
 }
 
+@media screen and (min-width: 748px) {
+  .itemcards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-@media screen and ( min-width: 748px) {
-    .itemcards{
-      flex-direction: row;
-      flex-wrap: wrap;
-
-
-    }
-   
-   .itemcard:nth-child(1) {
+  .itemcard:nth-child(1) {
     width: 60%;
-   
-
-    
-  
-   }
-
-
-
+  }
 }
 
 /* fine itemcard */
 /* inizio download app */
 
-.color{
-    background-color: rgb(148, 75, 193);
+.color {
+  background-color: rgb(148, 75, 193);
 }
 
-
-.boximg{
-    width: 100%;
-    height: 400px;
-    background-color: antiquewhite;
+.boximg {
+  width: 100%;
+  height: 400px;
+  background-color: antiquewhite;
 }
 
-.appdownload{
-    width: 90%;
-    height: 400px;
-    background-color: white;
-    border-radius: 10px;
-
-
-
+.appdownload {
+  width: 90%;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
 }
 
-@media screen and ( min-width: 1024px){
-    .main-container{
-        display: flex;
-       align-items: center;
-       justify-content: center;
-    }
-    .boximg{
-        
-        width: 30%;
-    }
+@media screen and (min-width: 1024px) {
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .boximg {
+    width: 30%;
+  }
 
-    .appdownload{
-        width: 30%;
-    }
+  .appdownload {
+    width: 30%;
+  }
 }
 
 /* fine downloadapp */
 /* inizio  expertcommit */
 
-
-
-
-
-
-.cardcommit{
-    width: 30%;
-    min-height: 150px;
-    border: 1px black solid;
-    background-color: blueviolet;
-    border-radius: 5px;
-    margin-bottom: 10px;   
+.cardcommit {
+  width: 30%;
+  min-height: 150px;
+  border: 1px black solid;
+  background-color: blueviolet;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.circleimg{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: 1px solid black;
-    margin-left: 15px;
-    margin-top: 10px;
-
-    
+.circleimg {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 15px;
+  margin-top: 10px;
 }
-@media  screen and (min-width: 1024px)  {
-    .cardcommit{
-        width: 80%;
-
-    }
-
-    
+@media screen and (min-width: 1024px) {
+  .cardcommit {
+    width: 80%;
+  }
 }
 /* fine cardcommit */
+/* inizio workingssection */
+.workcard {
+  height: 200px;
+  width: 35%;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 748px) {
+  #mediascreen {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .workcard {
+    height: 200px;
+    width: calc(75% / 2);
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .workcard {
+    width: calc(60% / 2);
+  }
+}
+/* inizio workingssection */
