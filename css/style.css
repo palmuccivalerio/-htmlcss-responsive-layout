@@ -23,12 +23,19 @@
     justify-content: space-between;
 }
 
-.container{
+.main-container{
     min-height: 200px;
     margin: 0 auto;
     width: 90%;
     border: 1px solid black;
 }
+
+
+.titlecenter{
+    text-align: center;
+}
+
+
 /* fine utilities */
 
 /* navbar */
@@ -91,6 +98,7 @@
 }
 
 /* fine itemcard */
+/* inizio download app */
 
 .color{
     background-color: rgb(148, 75, 193);
@@ -104,7 +112,6 @@
 }
 
 .appdownload{
-    margin: 0 auto;
     width: 90%;
     height: 400px;
     background-color: white;
@@ -115,12 +122,13 @@
 }
 
 @media screen and ( min-width: 1024px){
-    .container{
+    .main-container{
         display: flex;
        align-items: center;
+       justify-content: center;
     }
     .boximg{
-        margin: 0 auto;
+        
         width: 30%;
     }
 
@@ -128,3 +136,40 @@
         width: 30%;
     }
 }
+
+/* fine downloadapp */
+/* inizio  expertcommit */
+
+
+
+
+
+
+.cardcommit{
+    width: 30%;
+    min-height: 150px;
+    border: 1px black solid;
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin-bottom: 10px;   
+}
+
+.circleimg{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 15px;
+    margin-top: 10px;
+
+    
+}
+@media  screen and (min-width: 1024px)  {
+    .cardcommit{
+        width: 80%;
+
+    }
+
+    
+}
+/* fine cardcommit */
