@@ -3,8 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+img{
+  max-width: 100%;
+}
 
 /* utilities */
+.gap{
+  gap: 20px;
+}
 .colum {
   flex-direction: column;
 }
@@ -25,7 +31,7 @@
   min-height: 200px;
   margin: 0 auto;
   width: 90%;
-  border: 1px solid black;
+
 }
 
 .titlecenter {
@@ -37,10 +43,16 @@
 /* navbar */
 
 .navbar {
-  background-color: aqua;
+  background-color:rgb(28, 124, 243);
   width: 100%;
   height: 70px;
   padding: 10px;
+}
+
+#iconlist{
+  font-size: 20px;
+  color: white;
+  margin: 5px;
 }
 
 .list {
@@ -53,6 +65,9 @@
     gap: 10px;
     list-style-type: none;
   }
+  #iconlist{
+    display: none;
+  }
 }
 
 /* fine navbar */
@@ -60,12 +75,57 @@
 /* inizio itemcard */
 
 .itemcard {
-  margin: 10px;
-  border-radius: 10px;
-  height: 300px;
-  width: 30%;
-  border: 1px black solid;
+
+text-align: center;
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgb(189, 220, 252)
+  
+}
+
+.itemcard>*{
+  margin-top: 20px;
+}
+
+.itemcard-box {
+width: 80%;
+font-size: 1em;
+text-align: left;
+  
+}
+
+.itemcard-box h1{
+  color: blue;
+font-size: large;
+}
+
+.buttonstyle{
   background-color: blue;
+  color: white;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 110px;
+
+}
+
+
+.itemcard-box > *{
+  margin-top: 10px;
+  
+}
+
+.itemcardimg{
+width: 80%;
+}
+
+
+
+#icon{
+  margin-top: 40px;
+  color: blue;
+  font-size: 50px;
 }
 
 @media screen and (min-width: 748px) {
@@ -74,34 +134,38 @@
     flex-wrap: wrap;
   }
 
-  .itemcard:nth-child(1) {
-    width: 60%;
-  }
-}
+   .itemcard:nth-child(1) { 
+    width: calc( 100% / 2);
 
+    
+}
+.itemcard{
+  width: calc(100% / 4);
+}
+}
 /* fine itemcard */
 /* inizio download app */
 
 .color {
-  background-color: rgb(148, 75, 193);
+  background-color: rgb(148, 146, 223);
 }
 
 .boximg {
-  width: 100%;
-  height: 400px;
-  background-color: antiquewhite;
+  width: 80%;
+  color: white;
+
 }
 
 .appdownload {
-  width: 90%;
-  height: 400px;
+  width: 80%;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 @media screen and (min-width: 1024px) {
   .main-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   }
@@ -122,19 +186,35 @@
   min-height: 200px;
   border: 1px black solid;
   background-color: blueviolet;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
 .circleimg {
-  height: 80px;
-  width: 80px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   border: 1px solid black;
-  margin-left: 15px;
   margin-top: 10px;
+  background-image: url(../img/testimonial1.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+@media screen and (min-width: 748px) {
+  #cardcommitid {
+    display: flex;
+    flex-direction: row;
+    
+  }
 }
 @media screen and (min-width: 1024px) {
+  #container-expertcommit{
+    display: flex ;
+    flex-direction: column;
+  }
+  
+  
   .cardcommit {
     width: 80%;
   }

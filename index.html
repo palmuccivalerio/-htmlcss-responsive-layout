@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
@@ -10,7 +11,8 @@
     <!-- HEADER NAVBAR -->
     <header>
       <div class="navbar flex center-space">
-        <h1>logo</h1>
+        <img src="./img/logo.png" alt="">
+        <i class="fa-solid fa-list" id="iconlist"></i>
         <ul class="list">
           <li>planning</li>
           <li>testimonial</li>
@@ -23,24 +25,61 @@
 
     <main>
         <!-- SEZIONE CARD -->
-      <div class="itemcards main-container flex colum alingcenter">
-        <div class="itemcard"></div>
-        <div class="itemcard"></div>
-        <div class="itemcard"></div>
-        <div class="itemcard"></div>
-        <div class="itemcard"></div>
+      <div class="itemcards main-container flex colum alingcenter gap">
+        <div class="itemcard flex colum alingcenter"> 
+          <div class="itemcard-box">
+          <h1>Get a demo application</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iste, error sint, consequuntur nisi veritatis vitae excepturi consectetur dolorem nesciunt non totam? Totam fuga doloribus iste quidem dolorum cupiditate non.</p>
+          <button class="buttonstyle"> App Store </button>
+          </div>
+          <div class="itemcardimg">
+            <img src="./img/phone.png" alt="">
+
+          </div>
+
+        </div>
+        <div class="itemcard flex colum alingcenter ">
+          <i class="fa-solid fa-compass-drafting" id="icon"></i>
+          <h1>Web desing</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ex et quas possimus voluptatum. Fugiat porro doloremque perferendis dignissimos assumenda exercitationem accusamus, eos iusto corrupti harum nam et, officia dolore?</p>
+        </div>
+        <div class="itemcard flex colum alingcenter ">
+          <i class="fa-solid fa-compass-drafting" id="icon"></i>
+          <h1>Web desing</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ex et quas possimus voluptatum. Fugiat porro doloremque perferendis dignissimos assumenda exercitationem accusamus, eos iusto corrupti harum nam et, officia dolore?</p>
+        </div>
+        <div class="itemcard flex colum alingcenter ">
+          <i class="fa-solid fa-compass-drafting" id="icon"></i>
+          <h1>Web desing</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ex et quas possimus voluptatum. Fugiat porro doloremque perferendis dignissimos assumenda exercitationem accusamus, eos iusto corrupti harum nam et, officia dolore?</p>
+        </div>
+        <div class="itemcard flex colum alingcenter ">
+          <i class="fa-solid fa-compass-drafting" id="icon"></i>
+          <h1>Web desing</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ex et quas possimus voluptatum. Fugiat porro doloremque perferendis dignissimos assumenda exercitationem accusamus, eos iusto corrupti harum nam et, officia dolore?</p>
+        </div>
+
+        
       </div>
         <!--FINE SEZIONE CARD -->
         <!-- INIZIO DOWNLOAD APP -->
-      <div class="main-container color">
-        <div class="boximg"></div>
+        <section class="color">
+      <div class="main-container flex colum alingcenter titlecenter">
+        <div class="boximg titlecenter">
+          <img src="./img/planning1.png" alt="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </div>
+        <div class="appdownload titlecenter">
+          <img src="./img/planning2.png" alt="">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 
-        <div class="appdownload"></div>
+        </div>
       </div>
+    </section>
         <!--FINE  INIZIO DOWNLOAD APP -->
        <!-- SEZIONE COMMENTI ESPERTI -->
       <section class="expert-commit">
-        <div class="main-container alingcenter flex colum">
+        <div class="main-container alingcenter flex colum" id="container-expertcommit">
           <div class="titlecenter">
             <h1>we are commited</h1>
             <p>
@@ -49,11 +88,18 @@
               ab ducimus, dignissi
             </p>
           </div>
-          <div class="cardcommit">
-            <div class="circleimg"></div>
+          <div class="cardcommit flex colum alingcenter" id="cardcommitid">
+            <div class="circleimg"> </div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consequatur alias. Necessitatibus vero commodi inventore quaerat quidem dicta, architecto vel minima repellat a magnam nesciunt soluta,</p></div>
           </div>
-          <div class="cardcommit"></div>
-          <div class="cardcommit"></div>
+          <div class="cardcommit flex colum alingcenter" id="cardcommitid">
+            <div class="circleimg"> </div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consequatur alias. Necessitatibus vero commodi inventore quaerat quidem dicta, architecto vel minima repellat a magnam nesciunt soluta,</p></div>
+          </div>
+          <div class="cardcommit flex colum alingcenter" id="cardcommitid">
+            <div class="circleimg"> </div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consequatur alias. Necessitatibus vero commodi inventore quaerat quidem dicta, architecto vel minima repellat a magnam nesciunt soluta,</p></div>
+          </div>
         </div>
       </section>
        <!--FINE SEZIONE COMMENTI ESPERTI -->
